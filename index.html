@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>team78</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
@@ -15,14 +19,61 @@
         tempore fugiat eos, rerum harum assumenda, nesciunt odit, ut laborum
         accusamus?
       </p>
+      <a
+        href=""
+        class="header-link animate__animated animate__fadeInRightBig"
+        data-wow-duration="10s"
+        >link</a
+      >
     </header>
     <section class="hero">
-      <h1>Lorem, ipsum dolor.</h1>
+      <h1 class="animate__animated animate__fadeInRightBig">
+        Lorem, ipsum dolor.
+      </h1>
     </section>
+
+    <section>
+      <div
+        class="box wow animate__animated animate__backInLeft"
+        data-wow-duration="3s"
+      >
+        <img src="./images/cat1.jpg" alt="" width="500" />
+      </div>
+
+      <div
+        class="box wow animate__animated animate__backInRight"
+        data-wow-delay="2s"
+      >
+        <img src="./images/cat2.jpg" alt="" width="500" />
+      </div>
+
+      <div class="box wow animate__animated animate__backInLeft">
+        <img src="./images/cat3.jpg" alt="" width="500" />
+      </div>
+
+      <div
+        class="wow animate__animated animate__rotateInUpRight"
+        data-wow-delay="3s"
+      >
+        <img src="./images/cat2.jpg" alt="" width="500" />
+      </div>
+
+      <div class="box wow animate__animated animate__backInRight">
+        <img src="./images/dog1.webp" alt="" width="500" />
+      </div>
+    </section>
+
     <footer>
       <p>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. Soluta, ipsam?
       </p>
     </footer>
+
+    <!-- https://animate.style/ -->
+    <!-- https://wowjs.uk/docs.html -->
+    <script src="./js/wow.min.js"></script>
+    <script>
+      new WOW().init();
+    </script>
   </body>
 </html>
